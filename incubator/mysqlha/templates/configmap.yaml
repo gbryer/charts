@@ -13,13 +13,13 @@ data:
     [mysqld]
     log-bin
     skip_name_resolve
-	{{ .Values.mastercnf }}
+    {{ .Values.mastercnf }}
   slave.cnf: |
     # Apply this config only on slaves.
     [mysqld]
     super-read-only
     skip_name_resolve
-	{{ .Values.slavecnf }}
+    {{ .Values.slavecnf }}
   server-id.cnf: |
     [mysqld]
     server-id=@@SERVER_ID@@
