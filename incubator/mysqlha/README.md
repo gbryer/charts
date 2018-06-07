@@ -50,8 +50,8 @@ The following table lists the configurable parameters of the MySQL chart and the
 | `persistence.accessModes`  | Persistent volume access modes      | `[ReadWriteOnce]`                      |
 | `persistence.annotations`  | Persistent volume annotations       | `{}`                                   |
 | `resources`                | CPU/Memory resource requests/limits | Memory: `128Mi`, CPU: `100m`           |
-| `master.cnf`               | Additional config for master        | `nil`                                  |
-| `slave.cnf`                | Additional config for slave         | `nil`                                  |
+| `mastercnf`                | Additional config for master        | `nil`                                  |
+| `slavecnf`                 | Additional config for slave         | `nil`                                  |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
